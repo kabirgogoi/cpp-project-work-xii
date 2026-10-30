@@ -21,7 +21,7 @@ void addRecord() {
     Student record;
     cout << "Enter Roll Number: ";
     cin >> record.rollNumber;
-    cin.ignore(1000, '\n');
+    cin >> ws;
     cout << "Enter Name: ";
     cin.getline(record.name, 50);
     cout << "Enter Marks: ";
