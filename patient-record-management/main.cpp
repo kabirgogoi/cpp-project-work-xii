@@ -21,7 +21,7 @@ void addRecord() {
     Patient record;
     cout << "Enter Patient ID: ";
     cin >> record.patientId;
-    cin.ignore(1000, '\n');
+    cin >> ws;
     cout << "Enter Patient Name: ";
     cin.getline(record.name, 50);
     cout << "Enter Age: ";

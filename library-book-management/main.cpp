@@ -21,10 +21,9 @@ void addRecord() {
     Book record;
     cout << "Enter Book ID: ";
     cin >> record.bookId;
-    cin.ignore(1000, '\n');
+    cin >> ws;
     cout << "Enter Book Title: ";
     cin.getline(record.title, 50);
-    cin.ignore(1000, '\n');
     cout << "Enter Author Name: ";
     cin.getline(record.author, 50);
     ofstream file(FILE_NAME, ios::binary | ios::app);
