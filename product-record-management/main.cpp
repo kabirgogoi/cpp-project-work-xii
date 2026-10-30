@@ -21,7 +21,7 @@ void addRecord() {
     Product record;
     cout << "Enter Product ID: ";
     cin >> record.productId;
-    cin.ignore(1000, '\n');
+    cin >> ws;
     cout << "Enter Product Name: ";
     cin.getline(record.name, 50);
     cout << "Enter Price: ";
