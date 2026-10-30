@@ -21,7 +21,7 @@ void addRecord() {
     Employee record;
     cout << "Enter Employee ID: ";
     cin >> record.employeeId;
-    cin.ignore(1000, '\n');
+    cin >> ws;
     cout << "Enter Name: ";
     cin.getline(record.name, 50);
     cout << "Enter Salary: ";
