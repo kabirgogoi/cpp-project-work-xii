@@ -18,7 +18,7 @@ public:
         cout << "Enter Product ID: ";
         cin >> productId;
         cout << "Enter Product Name: ";
-        cin >> ws;
+        cin.ignore(1000, '\n');
         cin.getline(name, 50);
         cout << "Enter Price: ";
         cin >> price;
@@ -166,12 +166,23 @@ public:
 
             switch (choice)
             {
-            case 1: addRecord(); break;
-            case 2: displayRecords(); break;
-            case 3: searchRecord(); break;
-            case 4: deleteRecord(); break;
-            case 5: cout << "Goodbye!\n"; break;
-            default: cout << "Invalid choice.\n";
+            case 1:
+                addRecord();
+                break;
+            case 2:
+                displayRecords();
+                break;
+            case 3:
+                searchRecord();
+                break;
+            case 4:
+                deleteRecord();
+                break;
+            case 5:
+                cout << "Goodbye!\n";
+                break;
+            default:
+                cout << "Invalid choice.\n";
             }
         } while (choice != 5);
     }
